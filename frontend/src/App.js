@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import axios from 'axios'
 
 function App() {
   const [currentTime, setCurrentTime] = useState(0);
@@ -14,11 +12,9 @@ function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>React + Flask Tutorial</p>
-        <p>The current time is {currentTime}.</p>
-      </header>
+
+
+      <p>The current time is {currentTime}.</p>
     </div>
   );
 }
