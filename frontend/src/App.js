@@ -1,21 +1,20 @@
-import './App.css';
-import React, { useEffect, useState } from 'react';
+import "./App.css";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import InputTab from "../src/Components/InputTab/InputTab";
 
 function App() {
-  const [currentTime, setCurrentTime] = useState(0);
-
-  useEffect(() => {
-    fetch('/time').then(res => res.json()).then(data => {
-      setCurrentTime(data.time);
-    });
-  }, []);
-  
   return (
-    <div className="App">
-
-
-      <p>The current time is {currentTime}.</p>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact>
+          <InputTab />
+        </Route>
+        <Route path="/">
+          <div>Error 404</div>
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
