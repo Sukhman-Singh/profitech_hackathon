@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const InputTab = () => {
+const InputTab = ({ requestStocks }) => {
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
@@ -17,6 +17,7 @@ const InputTab = () => {
       <input placeholder="Amount to be Invested" />
 
       <p>The current time is {currentTime}.</p>
+      <button onClick={() => requestStocks("hello")}>Ree</button>
     </div>
   );
 };

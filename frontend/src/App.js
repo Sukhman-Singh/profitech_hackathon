@@ -1,15 +1,13 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import InputTab from "../src/Components/InputTab/InputTab";
+import RecPage from "./pages/recPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact>
-          <InputTab />
-        </Route>
+        <Route path="/" exact component={RecPage} />
         <Route path="/">
           <div>Error 404</div>
         </Route>

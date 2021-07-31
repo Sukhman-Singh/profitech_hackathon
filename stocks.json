@@ -1,0 +1,18 @@
+{
+  "stocks": [
+    {
+      "name": "memeStock",
+      "price": 200.0,
+      "numShares": 100,
+      "riskLevel": 1,
+      "link": "yahoo.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 5,
+      "link": "apple.com"
+    }
+  ]
+}
