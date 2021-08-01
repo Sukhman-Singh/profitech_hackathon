@@ -17,6 +17,14 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
         num_stocks: int representing the number of recommended stocks the user wants recommended
     Returns:
         List of dicts holding metadata about a list of stocks
+        stock_dict = {
+            'Name': str, 
+            'Ticker': str, 
+            'Sector': str,
+            'Size': str (Mega, Large, Mid, Small, Micro), 
+            'Market_Cap': str, 
+            'Change_y': str
+        }
     '''
 
     mega_cap_url = 'https://finviz.com/screener.ashx?v=111&f=cap_mega&r=41'
