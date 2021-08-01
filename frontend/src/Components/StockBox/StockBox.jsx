@@ -6,7 +6,12 @@ const StockBox = ({ stocks }) => {
   const [numStocks, setNumStocks] = useState(16);
 
   return (
-    <div>
+    <div className="stockBoxPage">
+      <div className="filterButtons">
+        <button className="lowButton">Low</button>
+        <button className="medButton">Medium</button>
+        <button className="highButton">High</button>
+      </div>
       <div className="stockBox">
         {stocks
           .slice(0, Math.min(stocks.length, numStocks))

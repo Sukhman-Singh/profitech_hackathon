@@ -1,5 +1,25 @@
+.stockBoxPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .stockBox {
   background-color: yellowgreen;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.filterButtons {
+  align-items: right;
+}
+
+.lowButton {
+}
+
+.midButton {
+}
+
+.highButton {
 }
