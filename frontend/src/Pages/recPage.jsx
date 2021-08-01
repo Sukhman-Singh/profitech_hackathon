@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputTab from "../Components/InputTab/InputTab";
 import StockBox from "../Components/StockBox/StockBox";
 import "./recPage.css";
+import logo from "./logo.png";
 
 const RecPage = () => {
   const [stocks, setStocks] = useState([]);
@@ -13,9 +14,10 @@ const RecPage = () => {
       });
   };
   return (
-    <div>
+    // TODO change class name
+    <div className="test">
       <div className="logoAndName">
-        <img src="./logo.png" alt="logo" height="100px" width="100px"></img>
+        <img src={logo} alt="logo" height="200px"></img>
         <div className="name">Stock Box</div>
       </div>
       <InputTab requestStocks={requestStocks} />

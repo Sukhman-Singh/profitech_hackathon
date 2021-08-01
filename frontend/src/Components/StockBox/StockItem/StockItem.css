@@ -1,20 +1,33 @@
 .stockItem {
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: 0px 2px 5px black;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
 }
 
+.stockRow {
+  display: flex;
+}
+
+.stockCol {
+}
+
 .stockItem:hover {
   background-color: green;
 }
 
+.stockTicker {
+  font-weight: bold;
+  font-size: 30px;
+  border: solid 2px black;
+  padding: 5px;
+  margin: 5px;
+}
+
 .stockName {
   font-weight: bold;
-  font-size: 20px;
 }
 
 .stockPrice {

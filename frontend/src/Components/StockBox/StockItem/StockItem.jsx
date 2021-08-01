@@ -1,21 +1,11 @@
 import React from "react";
 import "./StockItem.css";
 
-// stock_dict = {
-//   'Name': str,
-//   'Ticker': str,
-//   'Sector': str,
-//   'Size': str (Mega, Large, Mid, Small, Micro),
-//   'Market_Cap': str,
-//   'DailyChange': str,
-//   'AnalystRecommendation': float (1=Strong buy, 5=Hard Sell),
-// price? link?
-
 const sizeColors = {
   micro: "orange",
   small: "purple",
   mid: "red",
-  large: "green",
+  large: "blue",
   mega: "yellow",
 };
 
@@ -25,26 +15,40 @@ const StockItem = ({
   price,
   sector,
   size,
-  marketCap,
-  dailyChange,
-  analystRec,
+  market_cap,
+  daily_change,
+  analyst_recommendation,
   link,
 }) => {
   return (
     <a href={"https://" + link}>
       <div className="stockItem" style={{ backgroundColor: sizeColors[size] }}>
-        <div className="stockName">{name}</div>
-        <div className="stockPrice">
-          ${price} + {dailyChange}
+        <div className="stockRow">
+          <div className="stockCol">
+            <div className="stockTicker">{ticker}</div>
+          </div>
+          <div className="stockCol">
+            <div className="stockName">{name}</div>
+            <div className="stockAnalystRec">{analyst_recommendation}</div>
+          </div>
         </div>
-        <div className="stockSize">Size: {size}</div>
-        <div className="stockMarketCap">MarketCap: {marketCap}</div>
-        <div className="stockSector">Sector: {sector}</div>
-        <div className="stockTicker">Ticker: {ticker}</div>
+
+        <div className="stockRow">
+          <div className="stockCol">
+            <div className="stockSector">{sector}</div>
+          </div>
+          <div className="stockCol">
+            {/* <div className="stockMarketCap">MarketCap: {market_cap}</div> */}
+            <div className="stockPrice">
+              ${price} + {daily_change}
+            </div>
+          </div>
+        </div>
+        {/* 
+        TODO add or keep?
         <div className="stockAnalystRec">
-          Analyst Recommendation: {analystRec}
-        </div>
-        <div className="stockLink">{link}</div>
+          Analyst Recommendation: {analyst_recommendation}
+        </div> */}
       </div>
     </a>
   );
