@@ -32,25 +32,21 @@ const StockItem = ({
             <div className="stockAnalystRec">
               Analyst Rating: {analyst_recommendation}
             </div>
+            <div>
+              Price: <span className="stockPrice">${price}</span>
+            </div>
           </div>
         </div>
 
         <div className="stockRow">
           <div className="stockCol">
+            <div className="stockMarketCap">Market Cap: {market_cap}</div>
             <div className="stockSector">{sector}</div>
           </div>
           <div className="stockCol">
-            {/* <div className="stockMarketCap">MarketCap: {market_cap}</div> */}
-            <div className="stockPrice">
-              ${price} {daily_change}%
-            </div>
+            <div className="stockDailyChange">{daily_change}%</div>
           </div>
         </div>
-        {/* 
-        TODO add or keep?
-        <div className="stockAnalystRec">
-          Analyst Recommendation: {analyst_recommendation}
-        </div> */}
       </div>
     </a>
   );
