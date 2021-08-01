@@ -1,0 +1,31 @@
+,No._x,Ticker,Company,Sector,Industry,Country,Market Cap,P/E,Price_x,Change_x,Volume_x,No._y,Perf Week,Perf Month,Perf Quart,Perf Half,Perf Year,Perf YTD,Volatility W,Volatility M,Recom,Avg Volume,Rel Volume,Price_y,Change_y,Volume_y
+0,41,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,USA,387.21B,27.22,412.22,0.03%,1788436,41,-1.31%,2.94%,3.37%,23.57%,35.05%,17.55%,1.37%,1.48%,1.80,2.94M,0.61,412.22,0.03%,1788436
+1,42,V,Visa Inc.,Financial,Credit Services,USA,515.20B,58.92,246.39,-0.62%,5781580,42,-1.06%,5.38%,5.49%,27.50%,26.97%,12.65%,1.49%,1.39%,1.80,7.00M,0.83,246.39,-0.62%,5781580
+2,43,VZ,Verizon Communications Inc.,Communication Services,Telecom Services,USA,231.22B,11.56,55.78,-0.36%,13581263,43,-0.18%,-0.45%,-3.48%,1.88%,-2.65%,-5.06%,0.93%,1.00%,2.70,16.15M,0.84,55.78,-0.36%,13581263
+3,44,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,USA,396.19B,33.14,142.55,0.22%,5343000,44,0.08%,1.08%,1.89%,1.47%,9.55%,-1.11%,1.08%,1.19%,1.90,7.57M,0.71,142.55,0.22%,5343000
+4,45,XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,USA,244.02B,-,57.57,-2.31%,28565485,45,0.93%,-8.73%,0.58%,28.39%,37.50%,39.67%,2.02%,2.39%,2.60,23.58M,1.21,57.57,-2.31%,28565485
+5,21,INTC,Intel Corporation,Technology,Semiconductors,USA,229.04B,12.07,53.72,0.04%,16324178,21,1.36%,-4.31%,-6.62%,-3.22%,11.94%,7.83%,1.92%,1.97%,2.80,24.42M,0.67,53.72,0.04%,16324178
+6,22,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,USA,448.69B,25.89,172.20,0.01%,5321146,22,0.24%,4.53%,5.82%,5.56%,17.27%,9.42%,0.94%,1.19%,1.90,6.62M,0.80,172.20,0.01%,5321146
+7,23,JPM,JPMorgan Chase & Co.,Financial,Banks - Diversified,USA,460.34B,10.12,151.78,-0.80%,9751878,23,0.76%,-2.42%,-1.32%,17.96%,56.44%,19.45%,1.43%,2.04%,2.30,14.10M,0.69,151.78,-0.80%,9751878
+8,24,KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,USA,243.57B,30.56,57.03,-0.04%,11677267,24,0.04%,5.40%,5.65%,18.44%,19.58%,3.99%,0.86%,1.16%,2.10,14.48M,0.81,57.03,-0.04%,11677267
+9,25,LLY,Eli Lilly and Company,Healthcare,Drug Manufacturers - General,USA,228.11B,36.47,243.50,-0.75%,1891547,25,-0.27%,6.09%,33.23%,17.08%,59.15%,44.22%,1.58%,1.56%,2.10,3.30M,0.57,243.50,-0.75%,1891547
+10,26,MA,Mastercard Incorporated,Financial,Credit Services,USA,371.69B,59.09,385.94,-0.74%,2514433,26,-1.86%,5.71%,1.02%,22.02%,24.90%,8.12%,1.90%,1.92%,1.80,3.30M,0.76,385.94,-0.74%,2514433
+11,27,MSFT,Microsoft Corporation,Technology,Software - Infrastructure,USA,2119.67B,38.77,284.91,-0.55%,20260550,27,-1.64%,5.17%,12.98%,22.83%,39.73%,28.10%,1.50%,1.45%,1.60,24.39M,0.83,284.91,-0.55%,20260550
+12,28,NFLX,"Netflix, Inc.",Communication Services,Entertainment,USA,227.87B,54.75,517.57,0.65%,2508856,28,0.42%,-2.01%,0.80%,-2.78%,6.54%,-4.28%,1.77%,2.24%,2.00,3.57M,0.70,517.57,0.65%,2508856
+13,29,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,USA,260.70B,47.05,167.51,0.31%,5320431,29,0.69%,8.43%,26.31%,25.39%,73.01%,18.41%,1.31%,1.47%,1.90,6.84M,0.78,167.51,0.31%,5320431
+14,30,NVDA,NVIDIA Corporation,Technology,Semiconductors,USA,486.81B,92.46,194.99,-0.83%,17977930,30,-0.30%,-2.52%,29.91%,50.11%,83.71%,49.36%,3.11%,3.13%,1.90,39.95M,0.45,194.99,-0.83%,17977930
+15,31,NVS,Novartis AG,Healthcare,Drug Manufacturers - General,Switzerland,227.40B,23.34,92.39,0.22%,1386023,31,0.90%,1.26%,8.39%,2.12%,9.69%,-2.16%,0.85%,0.80%,1.70,1.76M,0.79,92.39,0.22%,1386023
+16,32,ORCL,Oracle Corporation,Technology,Software - Infrastructure,USA,251.62B,19.05,87.14,-0.56%,7908993,32,-0.63%,11.95%,14.98%,44.20%,57.72%,34.70%,1.37%,2.43%,2.80,12.29M,0.64,87.14,-0.56%,7908993
+17,33,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,USA,214.18B,26.56,156.95,0.09%,3641125,33,-0.15%,5.93%,8.87%,14.92%,13.99%,5.83%,0.94%,1.13%,2.30,4.84M,0.75,156.95,0.09%,3641125
+18,34,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,USA,238.43B,25.70,42.81,0.05%,24549823,34,2.71%,9.32%,10.76%,19.25%,16.61%,16.30%,1.82%,1.51%,2.60,25.87M,0.95,42.81,0.05%,24549823
+19,35,PG,The Procter & Gamble Company,Consumer Defensive,Household & Personal Products,USA,343.26B,26.16,142.23,1.97%,14373115,35,1.75%,5.41%,6.60%,10.94%,8.23%,2.22%,1.38%,1.22%,2.50,8.43M,1.71,142.23,1.97%,14373115
+20,36,PYPL,"PayPal Holdings, Inc.",Financial,Credit Services,USA,318.60B,62.78,275.53,-2.70%,11675544,36,-10.70%,-5.47%,5.05%,17.59%,43.13%,17.65%,2.46%,2.10%,1.80,6.61M,1.77,275.53,-2.70%,11675544
+21,37,TM,Toyota Motor Corporation,Consumer Cyclical,Auto Manufacturers,Japan,288.88B,12.47,179.84,-0.87%,146445,37,-0.01%,2.86%,19.28%,27.98%,46.86%,16.35%,0.80%,0.96%,1.00,274.52K,0.53,179.84,-0.87%,146445
+22,38,TMO,Thermo Fisher Scientific Inc.,Healthcare,Diagnostics & Research,USA,209.15B,27.14,540.01,1.17%,1395375,38,1.46%,7.05%,14.84%,5.95%,31.53%,15.94%,1.72%,1.54%,1.70,1.64M,0.85,540.01,1.17%,1395375
+23,39,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,USA,662.00B,692.74,687.20,1.45%,28723722,39,6.81%,1.10%,-3.13%,-13.40%,130.99%,-2.62%,4.32%,3.70%,2.80,25.47M,1.13,687.20,1.45%,28723722
+24,40,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,Taiwan,546.69B,30.59,116.64,0.42%,6441001,40,-0.13%,-2.93%,-0.09%,-4.02%,45.93%,6.97%,1.75%,2.10%,2.00,8.50M,0.76,116.64,0.42%,6441001
+25,41,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,USA,387.21B,27.22,412.22,0.03%,1788436,41,-1.31%,2.94%,3.37%,23.57%,35.05%,17.55%,1.37%,1.48%,1.80,2.94M,0.61,412.22,0.03%,1788436
+26,42,V,Visa Inc.,Financial,Credit Services,USA,515.20B,58.92,246.39,-0.62%,5781580,42,-1.06%,5.38%,5.49%,27.50%,26.97%,12.65%,1.49%,1.39%,1.80,7.00M,0.83,246.39,-0.62%,5781580
+27,43,VZ,Verizon Communications Inc.,Communication Services,Telecom Services,USA,231.22B,11.56,55.78,-0.36%,13581263,43,-0.18%,-0.45%,-3.48%,1.88%,-2.65%,-5.06%,0.93%,1.00%,2.70,16.15M,0.84,55.78,-0.36%,13581263
+28,44,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,USA,396.19B,33.14,142.55,0.22%,5343000,44,0.08%,1.08%,1.89%,1.47%,9.55%,-1.11%,1.08%,1.19%,1.90,7.57M,0.71,142.55,0.22%,5343000
+29,45,XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,USA,244.02B,-,57.57,-2.31%,28565485,45,0.93%,-8.73%,0.58%,28.39%,37.50%,39.67%,2.02%,2.39%,2.60,23.58M,1.21,57.57,-2.31%,28565485
