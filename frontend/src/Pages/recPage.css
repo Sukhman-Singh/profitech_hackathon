@@ -1,0 +1,10 @@
+.logoAndName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: bold;
+}

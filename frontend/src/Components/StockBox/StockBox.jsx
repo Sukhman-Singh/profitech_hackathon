@@ -8,9 +8,11 @@ const StockBox = ({ stocks }) => {
   return (
     <div className="stockBoxPage">
       <div className="filterButtons">
-        <button className="lowButton">Low</button>
-        <button className="medButton">Medium</button>
-        <button className="highButton">High</button>
+        <button className="microButton">Micro</button>
+        <button className="smallButton">Small</button>
+        <button className="midButton">Mid</button>
+        <button className="largeButton">Large</button>
+        <button className="megaButton">Mega</button>
       </div>
       <div className="stockBox">
         {stocks
