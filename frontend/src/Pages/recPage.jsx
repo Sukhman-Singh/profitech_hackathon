@@ -13,6 +13,7 @@ const RecPage = () => {
   };
   return (
     <div>
+      <div className="name">Stock Box</div>
       <InputTab requestStocks={requestStocks} />
       <StockBox stocks={stocks} />
     </div>

@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import RecPage from "./pages/recPage";
+import RecPage from "./Pages/recPage";
 
 function App() {
   return (
