@@ -24,7 +24,7 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
             'Size': str (Mega, Large, Mid, Small, Micro), 
             'Market_Cap': str, 
             'DailyChange': str,
-            'AnalystRecommendation': float (1=Strong buy, 5=Hard Sell), 
+            'AnalystRecommendation': float (1=Strong buy, 5=Hard SelL), 
 
         }
     '''
@@ -72,11 +72,11 @@ def get_entire_df_from_url(url_overview: str, url_perf: str) -> pd.DataFrame:
     next_index = 21
     while next_index <= 441:
         print('Current Index: {}'.format(next_index))
-        sleeptime = random.uniform(0, 2)
+        sleeptime = random.uniform(1, 3)
         print("sleeping for:", sleeptime, "seconds")
         sleep(sleeptime)
         print("sleeping is over")
-        
+
         next_ov_url = url_overview + '&r=' + str(next_index)
         next_perf_url = url_perf + '&r=' + str(next_index)
         next_df = get_stock_df(url_overview=next_ov_url, url_perf=next_perf_url)
@@ -84,6 +84,7 @@ def get_entire_df_from_url(url_overview: str, url_perf: str) -> pd.DataFrame:
         if len(next_df.index) <= 1:
             return df
         df = df.append(next_df, ignore_index=True)
+           
         
         next_index += 20
     return df
@@ -115,20 +116,22 @@ def get_screener(url: str):
     Returns:
         df of finviz data
     '''
+
     screen = requests.get(url, headers = headers).text
 
     tables = pd.read_html(screen)
     tables = tables[-2]
     tables.columns = tables.iloc[0]
     tables = tables[1:]
-
+    
     return tables
 
 
 
 if __name__ =='__main__':
-    stock_list = get_stock_list(income=100000, investment_amount=20000, num_stocks=56)
-
+    stock_list = get_stock_list(income=100000, investment_amount=50000, num_stocks=100)
+    #table = get_screener(url='https://finviz.com/screener.ashx?v=141&f=cap_large,fa_curratio_o0.5,fa_epsyoy1_pos,fa_estltgrowth_pos,fa_roi_pos,ta_beta_u1&ft=3&o=-marketcap&r=21')
+    #print(table.head())
 
 
 
