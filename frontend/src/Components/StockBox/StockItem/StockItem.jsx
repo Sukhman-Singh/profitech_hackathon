@@ -21,7 +21,7 @@ const StockItem = ({
   link,
 }) => {
   return (
-    <a href={"https://" + link}>
+    <a href={link}>
       <div className="stockItem" style={{ backgroundColor: sizeColors[size] }}>
         <div className="stockRow">
           <div className="stockCol">
@@ -29,7 +29,9 @@ const StockItem = ({
           </div>
           <div className="stockCol">
             <div className="stockName">{name}</div>
-            <div className="stockAnalystRec">{analyst_recommendation}</div>
+            <div className="stockAnalystRec">
+              Analyst Rating: {analyst_recommendation}
+            </div>
           </div>
         </div>
 
@@ -40,7 +42,7 @@ const StockItem = ({
           <div className="stockCol">
             {/* <div className="stockMarketCap">MarketCap: {market_cap}</div> */}
             <div className="stockPrice">
-              ${price} + {daily_change}
+              ${price} {daily_change}%
             </div>
           </div>
         </div>
