@@ -139,7 +139,9 @@ def stock_list_from_df(df: pd.DataFrame, amount:int, size_type:str):
             'Sector': row['Sector'],
             'Size': size_type, 
             'Market_Cap': row['Market Cap'], 
-            'Change_y': row['Change_y']
+            'DailyChange': row['Change_y'], 
+            'AnalystRecommendation': row['Recom'], 
+            'Link': 'https://finance.yahoo.com/quote/' + row['Ticker']
         }
         stock_list.append(stock_dict)
     

@@ -23,7 +23,9 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
             'Sector': str,
             'Size': str (Mega, Large, Mid, Small, Micro), 
             'Market_Cap': str, 
-            'Change_y': str
+            'DailyChange': str,
+            'AnalystRecommendation': float (1=Strong buy, 5=Hard Sell), 
+
         }
     '''
 
