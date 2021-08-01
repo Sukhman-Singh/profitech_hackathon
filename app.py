@@ -1,6 +1,7 @@
-import time
 from flask import Flask, jsonify, request, Response, flash
 import fin_vis as fv
+import json
+import time
 
 app = Flask(__name__)
 
@@ -15,10 +16,9 @@ def get_stock_list():
         investment_amount = request.args.get('investment_amount', default=50000, type=int)
         num_stocks = 100
 
-        stock_list = fv.get_stock_list(income=income, investment_amount=investment_amount, num_stocks=num_stocks)
-        return jsonify(stock_list)
-    return jsonify([])
+        stock_list = fv.get_stock_list_from_memory(income=income, investment_amount=investment_amount, num_stocks=num_stocks)
+        return json.dumps({'stocks': stock_list})
+    #return json.dumps([])
         
-
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
