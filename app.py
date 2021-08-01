@@ -1,7 +1,7 @@
 import time
 from flask import Flask, jsonify, request, Response, flash
 from fin_vis import get_stock_list
-
+  
 app = Flask(__name__)
 
 @app.route('/time')

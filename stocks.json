@@ -1,0 +1,480 @@
+{
+  "stocks": [
+    {
+      "name": "memeStock",
+      "price": 200.0,
+      "numShares": 100,
+      "riskLevel": 1,
+      "link": "yahoo.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 1,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 0,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 1,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 1,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 0,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 0,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 0,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 1,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    },
+    {
+      "name": "apple",
+      "price": 150.0,
+      "numShares": 1000,
+      "riskLevel": 2,
+      "link": "apple.com"
+    }
+  ]
+}

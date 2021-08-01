@@ -1,0 +1,5 @@
+.stockBox {
+  background-color: yellowgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
