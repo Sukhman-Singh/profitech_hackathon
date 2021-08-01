@@ -128,7 +128,7 @@ def stock_list_from_df(df: pd.DataFrame, amount:int, size_type:str):
     Returns:
         A list of stock metadata, list of dicts
     '''
-    subset_df = df[['Ticker', 'Company', 'Sector', 'Market Cap', 'Recom', 'Change_y']].sort_values(by='Recom', ascending=False)
+    subset_df = df[['Ticker', 'Company', 'Sector', 'Market Cap', 'Price_x', 'Recom', 'Change_y']].sort_values(by='Recom', ascending=False)
     subset_df = subset_df.iloc[0:amount, :]
     stock_list = []
     for index, row in subset_df.iterrows():
