@@ -15,7 +15,7 @@ const RecPage = () => {
   return (
     <div>
       <div className="logoAndName">
-        <img src="logo.png" alt="logo" height="100px" width="100px"></img>
+        <img src="./logo.png" alt="logo" height="100px" width="100px"></img>
         <div className="name">Stock Box</div>
       </div>
       <InputTab requestStocks={requestStocks} />

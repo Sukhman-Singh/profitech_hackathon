@@ -32,11 +32,11 @@ def create_final_stock_list(mega_df: pd.DataFrame,
     
     ranges = create_indices(cap_weights=weights, num_stocks=num_stocks)
     
-    mega_list = stock_list_from_df(df=mega_df, amount=ranges['mega_ix'], size_type='Mega')
-    large_list = stock_list_from_df(df=large_df, amount=ranges['large_ix'], size_type='Large')
-    mid_list = stock_list_from_df(df=mid_df, amount=ranges['mid_ix'], size_type='Mid')
-    small_list = stock_list_from_df(df=small_df, amount=ranges['small_ix'], size_type='Small')
-    micro_list = stock_list_from_df(df=micro_df, amount=ranges['micro_ix'], size_type='Micro')
+    mega_list = stock_list_from_df(df=mega_df, amount=ranges['mega_ix'], size_type='mega')
+    large_list = stock_list_from_df(df=large_df, amount=ranges['large_ix'], size_type='large')
+    mid_list = stock_list_from_df(df=mid_df, amount=ranges['mid_ix'], size_type='mid')
+    small_list = stock_list_from_df(df=small_df, amount=ranges['small_ix'], size_type='small')
+    micro_list = stock_list_from_df(df=micro_df, amount=ranges['micro_ix'], size_type='micro')
     
     final_stock_list = mega_list + large_list + mid_list + small_list + micro_list
     
@@ -134,14 +134,15 @@ def stock_list_from_df(df: pd.DataFrame, amount:int, size_type:str):
     for index, row in subset_df.iterrows():
         
         stock_dict = {
-            'Name': row['Company'], 
-            'Ticker': row['Ticker'], 
-            'Sector': row['Sector'],
-            'Size': size_type, 
-            'Market_Cap': row['Market Cap'], 
-            'DailyChange': row['Change_y'], 
-            'AnalystRecommendation': row['Recom'], 
-            'Link': 'https://finance.yahoo.com/quote/' + row['Ticker']
+            'name': row['Company'], 
+            'ticker': row['Ticker'], 
+            'sector': row['Sector'],
+            'size': size_type, 
+            'market_cap': row['Market Cap'], 
+            'daily_change': float(row['Change_y'][:-1]), 
+            'price': row['Price_x'], 
+            'analyst_recommendation': row['Recom'], 
+            'link': 'https://finance.yahoo.com/quote/' + row['Ticker']
         }
         stock_list.append(stock_dict)
     

@@ -18,13 +18,15 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
     Returns:
         List of dicts holding metadata about a list of stocks
         stock_dict = {
-            'Name': str, 
-            'Ticker': str, 
-            'Sector': str,
-            'Size': str (Mega, Large, Mid, Small, Micro), 
-            'Market_Cap': str, 
-            'DailyChange': str,
-            'AnalystRecommendation': float (1=Strong buy, 5=Hard Sell), 
+            'name': str, 
+            'ticker': str, 
+            'sector': str,
+            'size': str (mega, large, mid, small, micro), 
+            'market_cap': str, 
+            'daily_change': float,
+            'price': float, 
+            'analyst_recommendation': float (1=Strong buy, 5=Hard Sell), 
+            'link': str
 
         }
     '''
@@ -50,6 +52,12 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
     small_df = get_entire_df_from_url(url_overview=small_cap_url, url_perf=small_cap_perf_url)
     micro_df = get_entire_df_from_url(url_overview=micro_cap_url, url_perf=micro_cap_perf_url)
 
+    mega_df.to_csv('data_files/mega.csv')
+    large_df.to_csv('data_files/large.csv')
+    mid_df.to_csv('data_files/mid.csv')
+    small_df.to_csv('data_files/small.csv')
+    micro_df.to_csv('data_files/micro.csv')
+
     stock_list = create_final_stock_list(mega_df=mega_df, large_df=large_df, 
                         mid_df=mid_df, small_df=small_df, 
                         micro_df=micro_df, income=income,
@@ -72,11 +80,11 @@ def get_entire_df_from_url(url_overview: str, url_perf: str) -> pd.DataFrame:
     next_index = 21
     while next_index <= 441:
         print('Current Index: {}'.format(next_index))
-        sleeptime = random.uniform(0, 2)
+        sleeptime = random.uniform(0.5, 1)
         print("sleeping for:", sleeptime, "seconds")
         sleep(sleeptime)
         print("sleeping is over")
-        
+
         next_ov_url = url_overview + '&r=' + str(next_index)
         next_perf_url = url_perf + '&r=' + str(next_index)
         next_df = get_stock_df(url_overview=next_ov_url, url_perf=next_perf_url)
@@ -84,6 +92,7 @@ def get_entire_df_from_url(url_overview: str, url_perf: str) -> pd.DataFrame:
         if len(next_df.index) <= 1:
             return df
         df = df.append(next_df, ignore_index=True)
+           
         
         next_index += 20
     return df
@@ -115,6 +124,7 @@ def get_screener(url: str):
     Returns:
         df of finviz data
     '''
+
     screen = requests.get(url, headers = headers).text
 
     tables = pd.read_html(screen)
@@ -127,8 +137,9 @@ def get_screener(url: str):
 
 
 if __name__ =='__main__':
-    stock_list = get_stock_list(income=100000, investment_amount=20000, num_stocks=56)
-
+    stock_list = get_stock_list(income=100000, investment_amount=50000, num_stocks=100)
+    #table = get_screener(url='https://finviz.com/screener.ashx?v=141&f=cap_large,fa_curratio_o0.5,fa_epsyoy1_pos,fa_estltgrowth_pos,fa_roi_pos,ta_beta_u1&ft=3&o=-marketcap&r=21')
+    #print(table.head())
 
 
 
