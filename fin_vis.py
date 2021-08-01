@@ -18,13 +18,15 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
     Returns:
         List of dicts holding metadata about a list of stocks
         stock_dict = {
-            'Name': str, 
-            'Ticker': str, 
-            'Sector': str,
-            'Size': str (Mega, Large, Mid, Small, Micro), 
-            'Market_Cap': str, 
-            'DailyChange': str,
-            'AnalystRecommendation': float (1=Strong buy, 5=Hard SelL), 
+            'name': str, 
+            'ticker': str, 
+            'sector': str,
+            'size': str (mega, large, mid, small, micro), 
+            'market_cap': str, 
+            'daily_change': float,
+            'price': float, 
+            'analyst_recommendation': float (1=Strong buy, 5=Hard Sell), 
+            'link': str
 
         }
     '''
@@ -49,6 +51,12 @@ def get_stock_list(income: int, investment_amount: int, num_stocks: int) -> List
     mid_df = get_entire_df_from_url(url_overview=mid_cap_url, url_perf=mid_cap_perf_url)
     small_df = get_entire_df_from_url(url_overview=small_cap_url, url_perf=small_cap_perf_url)
     micro_df = get_entire_df_from_url(url_overview=micro_cap_url, url_perf=micro_cap_perf_url)
+
+    mega_df.to_csv('data_files/mega.csv')
+    large_df.to_csv('data_files/large.csv')
+    mid_df.to_csv('data_files/mid.csv')
+    small_df.to_csv('data_files/small.csv')
+    micro_df.to_csv('data_files/micro.csv')
 
     stock_list = create_final_stock_list(mega_df=mega_df, large_df=large_df, 
                         mid_df=mid_df, small_df=small_df, 
