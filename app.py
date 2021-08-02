@@ -5,7 +5,7 @@ import time
 
 app = Flask(__name__)
 
-@app.route('/stocks', methods=['GET','POST'])
+@app.route('/stocks_memory', methods=['GET','POST'])
 def get_stock_list():
     if request.method == 'GET':
         income = request.args.get('income', default=100000, type=int)
@@ -16,7 +16,7 @@ def get_stock_list():
         return json.dumps({'stocks': stock_list})
     return json.dumps({})
 
-@app.route('/stocks_real', methods=['GET','POST'])
+@app.route('/stocks', methods=['GET','POST'])
 def get_stock_list_real():
     if request.method == 'GET':
         income = request.args.get('income', default=100000, type=int)

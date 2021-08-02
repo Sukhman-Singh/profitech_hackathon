@@ -133,7 +133,7 @@ def get_entire_df_from_url(url_overview: str, url_perf: str) -> pd.DataFrame:
     next_index = 21
     while next_index <= 441:
         print('Current Index: {}'.format(next_index))
-        sleeptime = random.uniform(0.5, 1)
+        sleeptime = random.uniform(0.2, 0.3)
         print("sleeping for:", sleeptime, "seconds")
         sleep(sleeptime)
         print("sleeping is over")
