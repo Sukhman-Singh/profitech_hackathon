@@ -99,6 +99,7 @@ const StockBox = ({ stocks }) => {
           label="mega"
         />
       </div>
+
       <div className="stockBox">
         {filteredStocks
           .slice(0, Math.min(filteredStocks.length, numStocks))

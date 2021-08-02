@@ -42,7 +42,7 @@ const HomePage = ({ requestStocks, setShowFilter }) => {
     <div className="homePage">
       <div className="logoAndName">
         <img src={logo} alt="logo" height="200px"></img>
-        <div className="name">Stock Box</div>
+        <div className="name">StockBox</div>
       </div>
 
       <div className="inputForm">
@@ -94,6 +94,7 @@ const HomePage = ({ requestStocks, setShowFilter }) => {
             variant="contained"
             fullWidth
             type="submit"
+            style={{ backgroundColor: "#D4A373", color: "#FFFFFF" }}
           >
             Generate
           </Button>

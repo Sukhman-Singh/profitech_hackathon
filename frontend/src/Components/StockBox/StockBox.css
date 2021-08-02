@@ -3,10 +3,12 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #faedcd;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .stockBox {
-  background-color: #FAEDCD;
+  background-color: #faedcd;
   grid-template-columns: 1fr;
   display: grid;
   max-width: 1280px;
@@ -14,27 +16,31 @@
   padding: 20px;
   border-radius: 20px;
   height: 600px;
-
 }
 
 @media screen and (min-height: 850px) {
-  .stockBox {height: 700px;}
+  .stockBox {
+    height: 700px;
+  }
 }
 
 @media screen and (min-width: 650px) {
-  .stockBox {grid-template-columns: 1fr 1fr; }
+  .stockBox {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 900px) {
-  .stockBox {grid-template-columns: 1fr 1fr 1fr;}
+  .stockBox {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .stockBox {grid-template-columns: 1fr 1fr 1fr 1fr;}
+  .stockBox {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
-
-
-
 
 .filterButtons {
   align-items: right;
@@ -45,7 +51,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .buttons {
   margin: 10px !important;
