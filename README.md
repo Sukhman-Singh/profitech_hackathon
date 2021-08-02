@@ -7,8 +7,8 @@ Our front end was built using javascript, HTML, and CSS. We used the React javas
 
 
 ## How to Use
-git clone https://github.com/saksarip/profitech_hackathon.git\
-cd profitech_hackathon/frontend\
+git clone https://github.com/saksarip/profitech_hackathon.git \
+cd profitech_hackathon/frontend \
 npm install\ 
 cd ..\
 pip install -r requirements.txt\
