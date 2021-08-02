@@ -107,7 +107,7 @@ const StockBox = ({ stocks }) => {
             Show More
           </Button>
         ) : (
-          <Button className="buttons" disabled fullWidth>
+          <Button className="buttons" disabled>
             Show More
           </Button>
         )}
@@ -125,7 +125,7 @@ const StockBox = ({ stocks }) => {
             Show Less
           </Button>
         ) : (
-          <Button className="buttons" disabled fullWidth>
+          <Button className="buttons" disabled>
             Show Less
           </Button>
         )}
