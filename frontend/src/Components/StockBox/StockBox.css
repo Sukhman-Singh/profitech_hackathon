@@ -6,12 +6,47 @@
 }
 
 .stockBox {
-  background-color: yellowgreen;
+  background-color: #FAEDCD;
+  grid-template-columns: 1fr;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 1280px;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 20px;
+  height: 600px;
+
 }
+
+@media screen and (min-height: 850px) {
+  .stockBox {height: 700px;}
+}
+
+@media screen and (min-width: 650px) {
+  .stockBox {grid-template-columns: 1fr 1fr; }
+}
+
+@media screen and (min-width: 900px) {
+  .stockBox {grid-template-columns: 1fr 1fr 1fr;}
+}
+
+@media screen and (min-width: 1280px) {
+  .stockBox {grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+
+
+
 
 .filterButtons {
   align-items: right;
+}
+
+.pageButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.buttons {
+  margin: 10px !important;
 }

@@ -1,0 +1,22 @@
+.inputTab {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.inputToggler {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: -15px;
+  width: 50px;
+  height: 40px;
+  transform: rotate(90deg);
+  border: 2px solid #D4A373;
+  color: #D4A373;
+  border-radius: 50% 50% 0 0;
+
+}

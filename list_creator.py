@@ -41,7 +41,7 @@ def create_final_stock_list(mega_df: pd.DataFrame,
     
     final_stock_list = mega_list + large_list + mid_list + small_list + micro_list
 
-    final_stock_list = random.shuffle(final_stock_list)
+    random.shuffle(final_stock_list)
     
     print('Num stocks: {}'.format(len(final_stock_list)))
     

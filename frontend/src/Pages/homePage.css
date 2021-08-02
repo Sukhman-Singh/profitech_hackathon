@@ -1,0 +1,15 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefae0;
+  height: 100vh;
+  width: 100%;
+}
+
+.inputForm {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
