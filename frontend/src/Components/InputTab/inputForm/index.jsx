@@ -80,6 +80,7 @@ const InputForm = ({ requestStocks, setShowFilter }) => {
           />
           <Button
             className="inputTabButton"
+            style={{ backgroundColor: "#D4A373", color: "#FFFFFF" }}
             color="primary"
             variant="contained"
             fullWidth

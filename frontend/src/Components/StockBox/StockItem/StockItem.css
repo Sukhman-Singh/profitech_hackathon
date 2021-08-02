@@ -9,13 +9,12 @@
 
 .stockRow {
   display: flex;
-  justify-content: space-between;
-  text-align: right;
-  height: 75px;
+  height: 90px;
   align-items: center;
 }
 
-.stockCol {
+.bottom {
+  justify-content: space-between;
 }
 
 .stockDailyChange {
@@ -24,6 +23,8 @@
 
 .stockSector {
   text-align: left;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .stockItem:hover {
@@ -32,7 +33,7 @@
 
 .stockTicker {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
   border: solid 2px black;
   padding: 5px;
   margin: 0px 10px 10px 0px;
@@ -40,6 +41,7 @@
 
 .stockName {
   font-weight: bold;
+  font-size: 18px;
 }
 
 .stockPrice {
