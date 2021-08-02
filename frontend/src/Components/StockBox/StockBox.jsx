@@ -1,46 +1,92 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import StockItem from "./StockItem/StockItem";
 import "./StockBox.css";
+import { Checkbox, FormControlLabel } from "@material-ui/core";
 
 const StockBox = ({ stocks }) => {
   const [numStocks, setNumStocks] = useState(16);
   const [filteredStocks, setFilteredStocks] = useState(stocks);
-  const [selectedFilters, setSelectedFilters] = useState([]);
+  const [sizeFilters, setSizeFilters] = useState({
+    micro: true,
+    small: true,
+    mid: true,
+    large: true,
+    mega: true,
+  });
 
-  // function filterStocks(selectedSize) {
-  //   switch (selectedSize) {
-  //     case "micro":
-  //       setFilteredStocks();
-  //       break;
-  //     case "small":
-  //       // code block
-  //       break;
-  //     case "mid":
-  //       // code block
-  //       break;
-  //     case "large":
-  //       // code block
-  //       break;
-  //     case "mega":
-  //       // code block
-  //       break;
-  //     default:
-  //     // code block
-  //   }
-  // }
+  const toggleSizeFilter = (e) => {
+    setSizeFilters({
+      ...sizeFilters,
+      [e.target.value]: !sizeFilters[e.target.value],
+    });
+  };
+
+  useEffect(() => {
+    setFilteredStocks(stocks.filter((stock) => sizeFilters[stock.size]));
+  }, [sizeFilters, stocks]);
 
   return (
     <div className="stockBoxPage">
       <div className="filterButtons">
-        <button className="microButton">Micro</button>
-        <button className="smallButton">Small</button>
-        <button className="midButton">Mid</button>
-        <button className="largeButton">Large</button>
-        <button className="megaButton">Mega</button>
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={sizeFilters.micro}
+              onChange={toggleSizeFilter}
+              value="micro"
+              aria-label="micro"
+            />
+          }
+          label="micro"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={sizeFilters.small}
+              onChange={toggleSizeFilter}
+              value="small"
+              aria-label="small"
+            />
+          }
+          label="small"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={sizeFilters.mid}
+              onChange={toggleSizeFilter}
+              value="mid"
+              aria-label="mid"
+            />
+          }
+          label="mid"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={sizeFilters.large}
+              onChange={toggleSizeFilter}
+              value="large"
+              aria-label="large"
+            />
+          }
+          label="large"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={sizeFilters.mega}
+              onChange={toggleSizeFilter}
+              value="mega"
+              aria-label="mega"
+            />
+          }
+          label="mega"
+        />
       </div>
       <div className="stockBox">
-        {stocks
-          .slice(0, Math.min(stocks.length, numStocks))
+        {filteredStocks
+          .slice(0, Math.min(filteredStocks.length, numStocks))
           .map((stock, key) => (
             <StockItem key={key} {...stock} />
           ))}
