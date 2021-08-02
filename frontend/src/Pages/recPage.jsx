@@ -33,8 +33,7 @@ const RecPage = () => {
   };
 
   return (
-    // TODO change class name
-    <div className="test">
+    <div className="recPage">
       <div className="logoAndName">
         <img src={logo} alt="logo" height="80px"></img>
         <div className="name">StockBox</div>

@@ -35,6 +35,9 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="micro"
               aria-label="micro"
+              style={{
+                color: "#C3F292",
+              }}
             />
           }
           label="micro"
@@ -46,6 +49,9 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="small"
               aria-label="small"
+              style={{
+                color: "#A2CCE2",
+              }}
             />
           }
           label="small"
@@ -57,6 +63,9 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="mid"
               aria-label="mid"
+              style={{
+                color: "#FEA485",
+              }}
             />
           }
           label="mid"
@@ -68,6 +77,9 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="large"
               aria-label="large"
+              style={{
+                color: "#CFB4C7",
+              }}
             />
           }
           label="large"
@@ -79,6 +91,9 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="mega"
               aria-label="mega"
+              style={{
+                color: "#B6B8CE",
+              }}
             />
           }
           label="mega"

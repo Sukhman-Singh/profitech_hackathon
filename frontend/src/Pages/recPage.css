@@ -1,7 +1,6 @@
-.test {
-  background-color: #FEFAE0;
+.recPage {
+  background-color: #fefae0;
   height: 100vh;
-
 }
 
 .logoAndName {
@@ -25,4 +24,3 @@
   font-size: 50px;
   font-weight: bold;
 }
-
