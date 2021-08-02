@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import StockItem from "./StockItem/StockItem";
 import "./StockBox.css";
-import { Button, Checkbox, FormControlLabel } from "@material-ui/core";
+import {
+  Button,
+  Checkbox,
+  CircularProgress,
+  FormControlLabel,
+} from "@material-ui/core";
 
-const StockBox = ({ stocks }) => {
+const StockBox = ({ stocks, isLoading }) => {
   const [numStocks, setNumStocks] = useState(16);
   const [filteredStocks, setFilteredStocks] = useState(stocks);
   const [sizeFilters, setSizeFilters] = useState({
@@ -32,6 +37,7 @@ const StockBox = ({ stocks }) => {
           control={
             <Checkbox
               checked={sizeFilters.micro}
+              disabled={isLoading}
               onChange={toggleSizeFilter}
               value="micro"
               aria-label="micro"
@@ -49,6 +55,7 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="small"
               aria-label="small"
+              disabled={isLoading}
               style={{
                 color: "#A2CCE2",
               }}
@@ -63,6 +70,7 @@ const StockBox = ({ stocks }) => {
               onChange={toggleSizeFilter}
               value="mid"
               aria-label="mid"
+              disabled={isLoading}
               style={{
                 color: "#FEA485",
               }}
@@ -74,6 +82,7 @@ const StockBox = ({ stocks }) => {
           control={
             <Checkbox
               checked={sizeFilters.large}
+              disabled={isLoading}
               onChange={toggleSizeFilter}
               value="large"
               aria-label="large"
@@ -88,6 +97,7 @@ const StockBox = ({ stocks }) => {
           control={
             <Checkbox
               checked={sizeFilters.mega}
+              disabled={isLoading}
               onChange={toggleSizeFilter}
               value="mega"
               aria-label="mega"
@@ -100,16 +110,32 @@ const StockBox = ({ stocks }) => {
         />
       </div>
 
-      <div className="stockBox">
-        {filteredStocks
-          .slice(0, Math.min(filteredStocks.length, numStocks))
-          .map((stock, key) => (
-            <StockItem key={key} {...stock} />
-          ))}
+      <div className="stonks">
+        {isLoading ? (
+          <div className="memeClass">
+            <CircularProgress
+              style={{
+                backgroundColor: "#D4A373",
+                height: "100px",
+                width: "100px",
+                color: "transparent",
+              }}
+            />
+          </div>
+        ) : filteredStocks.length ? (
+          <div className="stockBox">
+            {filteredStocks
+              .slice(0, Math.min(filteredStocks.length, numStocks))
+              .map((stock, key) => (
+                <StockItem key={key} {...stock} />
+              ))}
+          </div>
+        ) : (
+          <div>no stonks for you (adjust filters accordingly)</div>
+        )}
       </div>
-
       <div className="pageButtons">
-        {numStocks !== 64 ? (
+        {numStocks !== 64 && !isLoading ? (
           <Button
             className="buttons"
             style={{
@@ -127,7 +153,7 @@ const StockBox = ({ stocks }) => {
             Show More
           </Button>
         )}
-        {numStocks !== 16 ? (
+        {numStocks !== 16 && !isLoading ? (
           <Button
             className="buttons"
             style={{

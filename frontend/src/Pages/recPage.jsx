@@ -9,6 +9,7 @@ const RecPage = () => {
   const params = useParams();
   const history = useHistory();
   const [stocks, setStocks] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // check that the params in the url are valid
@@ -16,6 +17,7 @@ const RecPage = () => {
       alert("Please input valid numbers for income and investment amount");
     } else {
       setStocks([]);
+      setIsLoading(true);
       fetch("/stocks", {
         method: "GET",
         income: params.income,
@@ -23,6 +25,7 @@ const RecPage = () => {
       })
         .then((res) => res.json())
         .then((data) => {
+          setIsLoading(false);
           setStocks(data.stocks);
         });
     }
@@ -39,7 +42,7 @@ const RecPage = () => {
         <div className="name">StockBox</div>
       </div>
       <InputTab requestStocks={requestStocks} />
-      <StockBox stocks={stocks} />
+      <StockBox stocks={stocks} isLoading={isLoading} />
     </div>
   );
 };
