@@ -7,7 +7,6 @@
 }
 
 .inputToggler {
-  background-color: #fff;
   display: flex;
   position: absolute;
   justify-content: center;
@@ -16,7 +15,8 @@
   width: 50px;
   height: 40px;
   transform: rotate(90deg);
-  border: 2px solid black;
+  border: 2px solid #D4A373;
+  color: #D4A373;
   border-radius: 50% 50% 0 0;
 
 }

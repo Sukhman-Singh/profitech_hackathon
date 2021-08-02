@@ -37,8 +37,7 @@ const StockItem = ({
             </div>
           </div>
         </div>
-
-        <div className="stockRow">
+        <div className="stockRow bottom">
           <div className="stockCol">
             <div className="stockMarketCap">Market Cap: {market_cap}</div>
             <div className="stockSector">{sector}</div>

@@ -24,8 +24,8 @@ const RecPage = () => {
     // TODO change class name
     <div className="test">
       <div className="logoAndName">
-        <img src={logo} alt="logo" height="200px"></img>
-        <div className="name">Stock Box</div>
+        <img src={logo} alt="logo" height="80px"></img>
+        <div className="name">StockBox</div>
       </div>
       <InputTab requestStocks={requestStocks} />
       <StockBox stocks={stocks} />
