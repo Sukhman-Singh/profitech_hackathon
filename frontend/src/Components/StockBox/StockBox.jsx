@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import StockItem from "./StockItem/StockItem";
 import "./StockBox.css";
-import { Checkbox, FormControlLabel } from "@material-ui/core";
+import { Button, Checkbox, FormControlLabel } from "@material-ui/core";
 
 const StockBox = ({ stocks }) => {
   const [numStocks, setNumStocks] = useState(16);
@@ -92,15 +92,43 @@ const StockBox = ({ stocks }) => {
           ))}
       </div>
 
-      <div>
-        <button onClick={() => setNumStocks(Math.min(64, numStocks + 16))}>
-          Show More
-        </button>
-        <button onClick={() => setNumStocks(Math.max(0, numStocks - 16))}>
-          Show less
-        </button>
-
-        <div>{numStocks}</div>
+      <div className="pageButtons">
+        {numStocks !== 64 ? (
+          <Button
+            className="buttons"
+            style={{
+              backgroundColor: "#D4A373",
+              color: "#FFFFFF",
+            }}
+            color="primary"
+            type="submit"
+            onClick={() => setNumStocks(Math.min(64, numStocks + 16))}
+          >
+            Show More
+          </Button>
+        ) : (
+          <Button className="buttons" disabled fullWidth>
+            Show More
+          </Button>
+        )}
+        {numStocks !== 16 ? (
+          <Button
+            className="buttons"
+            style={{
+              backgroundColor: "#D4A373",
+              color: "#FFFFFF",
+            }}
+            color="primary"
+            type="submit"
+            onClick={() => setNumStocks(Math.max(16, numStocks - 16))}
+          >
+            Show Less
+          </Button>
+        ) : (
+          <Button className="buttons" disabled fullWidth>
+            Show Less
+          </Button>
+        )}
       </div>
     </div>
   );

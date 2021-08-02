@@ -18,7 +18,7 @@
 }
 
 @media screen and (min-height: 850px) {
-  .stockBox {height: 750px;}
+  .stockBox {height: 700px;}
 }
 
 @media screen and (min-width: 650px) {
@@ -38,4 +38,15 @@
 
 .filterButtons {
   align-items: right;
+}
+
+.pageButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.buttons {
+  margin: 10px !important;
 }

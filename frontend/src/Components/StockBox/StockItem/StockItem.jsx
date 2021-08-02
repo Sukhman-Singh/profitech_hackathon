@@ -2,11 +2,11 @@ import React from "react";
 import "./StockItem.css";
 
 const sizeColors = {
-  micro: "orange",
-  small: "purple",
-  mid: "red",
-  large: "blue",
-  mega: "yellow",
+  micro: "#C3F292",
+  small: "#A2CCE2",
+  mid: "#FEA485",
+  large: "#CFB4C7",
+  mega: "#B6B8CE",
 };
 
 const StockItem = ({
