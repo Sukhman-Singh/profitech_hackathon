@@ -4,6 +4,30 @@ import "./StockBox.css";
 
 const StockBox = ({ stocks }) => {
   const [numStocks, setNumStocks] = useState(16);
+  const [filteredStocks, setFilteredStocks] = useState(stocks);
+  const [selectedFilters, setSelectedFilters] = useState([]);
+
+  // function filterStocks(selectedSize) {
+  //   switch (selectedSize) {
+  //     case "micro":
+  //       setFilteredStocks();
+  //       break;
+  //     case "small":
+  //       // code block
+  //       break;
+  //     case "mid":
+  //       // code block
+  //       break;
+  //     case "large":
+  //       // code block
+  //       break;
+  //     case "mega":
+  //       // code block
+  //       break;
+  //     default:
+  //     // code block
+  //   }
+  // }
 
   return (
     <div className="stockBoxPage">

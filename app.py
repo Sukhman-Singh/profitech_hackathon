@@ -14,7 +14,7 @@ def get_stock_list():
 
         stock_list = fv.get_stock_list_from_memory(income=income, investment_amount=investment_amount, num_stocks=num_stocks)
         return json.dumps({'stocks': stock_list})
-    #return json.dumps([])
+    return json.dumps([])
         
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
