@@ -1,6 +1,7 @@
 from typing import List
 import pandas as pd
 import math
+import random
 
 def create_final_stock_list(mega_df: pd.DataFrame, 
                             large_df: pd.DataFrame, 
@@ -39,6 +40,8 @@ def create_final_stock_list(mega_df: pd.DataFrame,
     micro_list = stock_list_from_df(df=micro_df, amount=ranges['micro_ix'], size_type='micro')
     
     final_stock_list = mega_list + large_list + mid_list + small_list + micro_list
+
+    final_stock_list = random.shuffle(final_stock_list)
     
     print('Num stocks: {}'.format(len(final_stock_list)))
     

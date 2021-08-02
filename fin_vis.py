@@ -8,6 +8,35 @@ from typing import List
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 
 
+def get_stock_list_analyst_rating(income: int, investment_amount: int, num_stocks: int, analyst_rating: float) -> List[dict]:
+    '''
+    Function the creates the final stock list from memory, and that meets a minimum analyst rating
+    Args:
+        income: int that represents the income of the user
+        investment_amount: int that represents the income of the user
+        num_stocks: int representing the number of recommended stocks the user wants recommended
+        analyst_rating: float representing the minimum analyst rating 
+    Returns:
+        List of dicts holding metadata about a list of stocks
+    '''
+
+    mega_df = pd.read_csv('data_files/mega.csv')
+    mega_df = mega_df[mega_df['Recom'] <= analyst_rating]
+    large_df = pd.read_csv('data_files/large.csv')
+    large_df = large_df[large_df['Recom'] <= analyst_rating]
+    mid_df = pd.read_csv('data_files/mid.csv')
+    mid_df = mid_df[mid_df['Recom'] <= analyst_rating]
+    small_df = pd.read_csv('data_files/small.csv')
+    small_df = small_df[small_df['Recom'] <= analyst_rating]
+    micro_df = pd.read_csv('data_files/micro.csv')
+    micro_df = micro_df[micro_df['Recom'] <= analyst_rating]
+
+    stock_list = create_final_stock_list(mega_df=mega_df, large_df=large_df, 
+                        mid_df=mid_df, small_df=small_df, 
+                        micro_df=micro_df, income=income,
+                       investment_amount=investment_amount, num_stocks=num_stocks)
+    return stock_list
+
 def get_stock_list_from_memory(income: int, investment_amount: int, num_stocks: int) -> List[dict]:
     '''
     Function the creates the final stock list from memory
@@ -17,18 +46,6 @@ def get_stock_list_from_memory(income: int, investment_amount: int, num_stocks: 
         num_stocks: int representing the number of recommended stocks the user wants recommended
     Returns:
         List of dicts holding metadata about a list of stocks
-        stock_dict = {
-            'name': str, 
-            'ticker': str, 
-            'sector': str,
-            'size': str (mega, large, mid, small, micro), 
-            'market_cap': str, 
-            'daily_change': float,
-            'price': float, 
-            'analyst_recommendation': float (1=Strong buy, 5=Hard Sell), 
-            'link': str
-
-        }
     '''
     mega_df = pd.read_csv('data_files/mega.csv')
     large_df = pd.read_csv('data_files/large.csv')
