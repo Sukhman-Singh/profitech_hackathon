@@ -5,10 +5,6 @@ import time
 
 app = Flask(__name__)
 
-@app.route('/time')
-def get_current_time():
-    return {'time': time.time()}
-
 @app.route('/stocks', methods=['GET','POST'])
 def get_stock_list():
     if request.method == 'GET':

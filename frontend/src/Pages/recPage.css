@@ -1,0 +1,14 @@
+.body {
+  background-color: "black";
+}
+
+.logoAndName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 100px;
+  font-weight: bold;
+}

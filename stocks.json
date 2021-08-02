@@ -1,480 +1,367 @@
 {
   "stocks": [
     {
-      "name": "memeStock",
-      "price": 200.0,
-      "numShares": 100,
-      "riskLevel": 1,
-      "link": "yahoo.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 1,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 0,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 1,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 1,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 0,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 0,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 0,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 1,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
-    },
-    {
-      "name": "apple",
-      "price": 150.0,
-      "numShares": 1000,
-      "riskLevel": 2,
-      "link": "apple.com"
+      "name": "fakeName",
+      "ticker": "fakeTicker",
+      "sector": "fakeSector",
+      "size": "micro",
+      "market_cap": "fakeMarketCap",
+      "daily_change": "Down",
+      "price": "fakePrice",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "mid",
+      "market_cap": "4 Billion",
+      "daily_change": -4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "large",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "macro",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
+    },
+    {
+      "name": "Apple",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "size": "small",
+      "market_cap": "4 Billion",
+      "daily_change": 4.0,
+      "price": "150",
+      "analyst_recommendation": "fakeAnalystRec",
+      "link": "https://finance.yahoo.com/quote/AAPL"
     }
   ]
 }

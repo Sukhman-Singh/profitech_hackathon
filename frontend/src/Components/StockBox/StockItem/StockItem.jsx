@@ -1,19 +1,52 @@
 import React from "react";
 import "./StockItem.css";
 
-const riskLevelColors = ["red", "purple", "orange"];
+const sizeColors = {
+  micro: "orange",
+  small: "purple",
+  mid: "red",
+  large: "blue",
+  mega: "yellow",
+};
 
-const StockItem = ({ name, price, riskLevel, link }) => {
+const StockItem = ({
+  name,
+  ticker,
+  price,
+  sector,
+  size,
+  market_cap,
+  daily_change,
+  analyst_recommendation,
+  link,
+}) => {
   return (
-    <a href={"https://" + link}>
-      <div
-        className="stockItem"
-        style={{ backgroundColor: riskLevelColors[riskLevel] }}
-      >
-        <div className="stockName">{name}</div>
-        <div className="stockPrice">${price}</div>
-        <div className="stockRiskLevel">Risk: {riskLevel}</div>
-        <div className="stockLink">{link}</div>
+    <a href={link}>
+      <div className="stockItem" style={{ backgroundColor: sizeColors[size] }}>
+        <div className="stockRow">
+          <div className="stockCol">
+            <div className="stockTicker">{ticker}</div>
+          </div>
+          <div className="stockCol">
+            <div className="stockName">{name}</div>
+            <div className="stockAnalystRec">
+              Analyst Rating: {analyst_recommendation}
+            </div>
+            <div>
+              Price: <span className="stockPrice">${price}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="stockRow">
+          <div className="stockCol">
+            <div className="stockMarketCap">Market Cap: {market_cap}</div>
+            <div className="stockSector">{sector}</div>
+          </div>
+          <div className="stockCol">
+            <div className="stockDailyChange">{daily_change}%</div>
+          </div>
+        </div>
       </div>
     </a>
   );
