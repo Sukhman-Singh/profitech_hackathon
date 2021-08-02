@@ -1,18 +1,25 @@
 import React, { useState } from "react";
-import InputTab from "../Components/InputTab/InputTab";
+import InputTab from "../Components/InputTab";
 import StockBox from "../Components/StockBox/StockBox";
 import "./recPage.css";
 import logo from "./logo.png";
 
 const RecPage = () => {
   const [stocks, setStocks] = useState([]);
+
   const requestStocks = (values) => {
-    fetch("/stocks")
+    setStocks([]);
+    fetch("/stocks", {
+      method: "GET",
+      income: values.income,
+      investment_amount: values.investment_amount,
+    })
       .then((res) => res.json())
       .then((data) => {
         setStocks(data.stocks);
       });
   };
+
   return (
     // TODO change class name
     <div className="test">
