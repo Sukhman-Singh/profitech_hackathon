@@ -3,8 +3,8 @@
 StockBox is an investment recommendation app. Based on your income, and the amount you want to invest, we estimate an acceptable level of risk for you and recommend an array of high-quality stocks. Built for the profitech hackathon 2021. 
 
 ## How we built it
-Frontend: JavaScript (REACT)
-Backend: Python (Flask)
+Frontend: JavaScript (REACT) \
+Backend: Python (Flask) \
 Data pulled from finviz.com using custom web scraping scripts
 
 
